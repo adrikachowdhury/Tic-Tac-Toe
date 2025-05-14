@@ -28,7 +28,7 @@ def kb(fact):
 """## **Function to check all the winning combinations**"""
 
 def WinningMove(mark):
-    # Using the indices to identify winner from any of the players
+    # Using the indices to identify the winner among the players
     win_combinations = [
         # ROWS
         [board[0, 0], board[0, 1], board[0, 2]],  # 1st row
@@ -55,7 +55,8 @@ def WinningMove(mark):
 def is_board_full():
     return all(pos == 'O' or pos == 'X' for pos in board.flatten())  # Checks if all pos is either 'O' or 'X'
 
-import numpy as np
+"""## **GUI Implementation**"""
+
 import tkinter as tk
 from tkinter import messagebox
 
