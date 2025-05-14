@@ -3,7 +3,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Overview
-This compact AI project, developed for an **_Artificial Intelligence (AI)_** course, implements a Tic-Tac-Toe winning move detector using Forward Chaining and First-Order Logic (FOL). It defines a knowledge base with predicates (e.g., `Occupied`, `WinningMove`) to identify if player X can win by placing a mark in an empty position. Optionally, a GUI visualizes the board and AI reasoning, showcasing skills in rule-based AI, logical reasoning, and Python programming for interactive applications.
+This compact project, developed for an **_Artificial Intelligence (AI)_** course, implements a Tic-Tac-Toe winning move detector using Forward Chaining and First-Order Logic (FOL). It defines a knowledge base with predicates (e.g., `Occupied`, `WinningMove`) to identify if player X can win by placing a mark in an empty position. Optionally, a GUI visualizes the board and AI reasoning, showcasing skills in rule-based AI, logical reasoning, and Python programming for interactive applications.
 
 ## Features
 - **Forward Chaining**: Applies FOL inference rules to detect winning moves for player X.
