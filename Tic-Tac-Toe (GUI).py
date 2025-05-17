@@ -2,64 +2,6 @@ import numpy as np
 import tkinter as tk
 from tkinter import messagebox
 
-"""## **Initialize Board Setup and Knowledge Base**"""
-
-# Board setup (initially it is empty)
-board = np.array([["P1", "P2", "P3"],
-                  ["P4", "P5", "P6"],
-                  ["P7", "P8", "P9"]])
-
-# Knowledge base (KB) storing facts about occupied positions
-knowledge_base = []
-
-"""## **Print Current Board State**"""
-
-def print_board():
-    for row in board:
-        print("|".join(row))
-    print()
-
-"""## **Defining Knowledge Base Function**"""
-
-def kb(fact):
-    if fact not in knowledge_base:
-        knowledge_base.append(fact)
-
-"""## **Function to check all the winning combinations**"""
-
-def WinningMove(mark):
-    # Using the indices to identify the winner among the players
-    win_combinations = [
-        # ROWS
-        [board[0, 0], board[0, 1], board[0, 2]],  # 1st row
-        [board[1, 0], board[1, 1], board[1, 2]],  # 2nd row
-        [board[2, 0], board[2, 1], board[2, 2]],  # 3rd row
-
-        # COLUMNS
-        [board[0, 0], board[1, 0], board[2, 0]],  # 1st column
-        [board[0, 1], board[1, 1], board[2, 1]],  # 2nd column
-        [board[0, 2], board[1, 2], board[2, 2]],  # 3rd column
-
-        # DIAGONALS
-        [board[0, 0], board[1, 1], board[2, 2]],
-        [board[0, 2], board[1, 1], board[2, 0]],
-    ]
-
-    for combo in win_combinations:
-        if all(pos == mark for pos in combo):  # Check if all positions in the combo have the same mark
-            return True
-    return False
-
-"""## **Check if the board is full**"""
-
-def is_board_full():
-    return all(pos == 'O' or pos == 'X' for pos in board.flatten())  # Checks if all pos is either 'O' or 'X'
-
-"""## **GUI Implementation**"""
-
-import tkinter as tk
-from tkinter import messagebox
-
 # Set up the game board (3x3 grid with P1 to P9)
 board = np.array([["P1", "P2", "P3"],
                   ["P4", "P5", "P6"],
