@@ -18,7 +18,7 @@ This compact project, developed for an **_Artificial Intelligence (AI)_** course
 - Tkinter or Pygame (for GUI)
 
 ## ⚙️ Setup
-1. Download the repository from GitHub.
+1. Download/clone the repository from GitHub.
 2. Install dependencies: `numpy` and `tkinter`/`pygame`
 3. Open `Tic-Tac-Toe.ipynb` in a notebook (Google Colab/Jupyter) and run all cells to implement the game in the console.
 4. For GUI version: Open `Tic-Tac-Toe (GUI).py` in a Python environment (e.g., VS Code or PyCharm) and run the script to launch the GUI game.
